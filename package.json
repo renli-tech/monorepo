@@ -1,7 +1,7 @@
 {
   "name": "monorepo",
   "repository": "git://github.com/renli-tech/Beyond.git",
-  "private":true,
+  "private": true,
   "author": "opeabidemi <opeabidemi@gmail.com>",
   "workspaces": {
     "packages": [
@@ -14,7 +14,25 @@
       "**/jest"
     ]
   },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --use-workspaces && yarn hooks:install",
+    "fix": "run-s fix:*",
+    "fix:code": "yarn lint:code --fix",
+    "fix:other": "yarn prettier --write",
+    "hooks:uninstall": "node node_modules/husky/husky.js uninstall",
+    "hooks:install": "node node_modules/husky/husky.js install",
+    "lerna:publish": "npx lerna publish --conventional-commits",
+    "lerna:changed": "npx lerna changed",
+    "lint": "run-p --continue-on-error lint:*",
+    "lint:code": "eslint --ignore-path .gitignore --ignore-path .prettierignore --ext .ts,.tsx .",
+    "lint:other": "yarn prettier --check",
+    "prebootstrap": "yarn"
+  },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "lerna": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=10.17.0"
   }
 }
