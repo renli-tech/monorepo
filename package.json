@@ -1,0 +1,20 @@
+{
+  "name": "monorepo",
+  "repository": "git://github.com/renli-tech/Beyond.git",
+  "private":true,
+  "author": "opeabidemi <opeabidemi@gmail.com>",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "examples/*"
+    ],
+    "nohoist": [
+      "**/babel**",
+      "**/eslint**",
+      "**/jest"
+    ]
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
