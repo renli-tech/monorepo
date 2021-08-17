@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "target": "es5",
+    "module": "esnext",
+    "lib": ["esnext", "DOM"],
+    "declaration": true,
+    "declarationMap": true,
     "skipLibCheck": true,
     "sourceMap": true,
     "outDir": "./dist",
@@ -24,5 +26,7 @@
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["./src/**/*.ts"]
+  "include": [
+    "packages/*/src"
+  ]
 }
