@@ -34,6 +34,16 @@ yarn bootstrap
 
 ```
 
+#### Testing
+
+Run this command to run all test
+
+```sh
+
+yarn run test
+
+```
+
 View the [lerna docs](https://lerna.js.org/) to see other commands
 
 This template is maintained by [Renli](https://github/renli-tech)
