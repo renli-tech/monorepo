@@ -1,6 +1,6 @@
 {
   "name": "monorepo",
-  "repository": "git://github.com/renli-tech/Beyond.git",
+  "repository": "git://github.com/renli-tech/monorepo.git",
   "private": true,
   "author": "opeabidemi <opeabidemi@gmail.com>",
   "workspaces": {
