@@ -68,12 +68,6 @@
   "engines": {
     "node": ">=10.17.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "yarn fix:code"
