@@ -2,6 +2,9 @@
   "name": "@monorepo/bar",
   "version": "0.0.0",
   "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "repository": "git://github.com/renli-tech/monorepo.git",
   "author": "opeabidemi <opeabidemi@gmail.com>",
   "license": "MIT",
@@ -10,7 +13,12 @@
     "dist"
   ],
   "scripts": {
-    "test":"jest "
+    "clean": "rimraf dist",
+    "watch": "yarn build:dev",
+    "test": "jest",
+    "build": "run-s clean build:prod",
+    "build:dev": "cross-env NODE_ENV=development rollup -cw",
+    "build:prod": "cross-env NODE_ENV=production rollup -c"
   },
   "browserslist": {
     "production": [

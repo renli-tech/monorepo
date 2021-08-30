@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import { omit } from "lodash/fp";
 import replace from "@rollup/plugin-replace";
 import typescript from "rollup-plugin-typescript2";
