@@ -8,6 +8,11 @@ A template for monorepo projects
 
 The monorepo structure is managed with [Lerna](https://lerna.js.org/)
 
+### 🧩 Branches
+
+- [Master](./) - with default configuration
+- [With Rollup](https://github.com/renli-tech/monorepo/tree/with-rollup) - with [Rollup](https://rollupjs.org/guide/en/) configuration for bundling files
+
 #### 😋 Features
 
 - [Eslint](https://eslint.org/) - For linting code
@@ -15,6 +20,7 @@ The monorepo structure is managed with [Lerna](https://lerna.js.org/)
 - [Husky](https://typicode.github.io/husky/#/) - For running pre-commit hooks
 - [Jest](https://jestjs.io/) - For testing
 - [Prettier](https://prettier.io/) - For writing neat code
+- [Rollup](https://rollupjs.org/guide/en/) - For bundling files
 - [Commitlint](https://commitlint.js.org/#/) - For linting commit messages
 
 #### Commands
@@ -26,6 +32,44 @@ Run this command to bootstrap all the packages and install the dependencies
 ```sh
 
 yarn bootstrap
+
+```
+
+#### Bundling packages
+
+To bundle all the packages we are using [Rollup](https://rollupjs.org/guide/en/)
+
+Run this command to bundle all the packages for production
+
+```sh
+
+yarn run bundle
+
+```
+
+And run this command to bundle all the packages for development
+
+```sh
+
+yarn run build
+
+```
+
+To build all packages in watch mode
+
+```sh
+
+yarn run watch
+
+```
+
+#### Testing
+
+Run this command to run all test
+
+```sh
+
+yarn run test
 
 ```
 

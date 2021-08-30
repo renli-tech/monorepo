@@ -20,7 +20,6 @@
     "bundle": "run-s clean bootstrap fix build test",
     "clean": "lerna run clean && lerna clean -y",
     "watch": "lerna run watch --parallel --concurrency 999",
-    "dev": "lerna run dev",
     "fix": "run-s fix:*",
     "fix:code": "yarn lint:code --fix",
     "fix:other": "yarn prettier --write",
