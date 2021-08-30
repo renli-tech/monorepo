@@ -10,7 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "test":"yarn run jest "
+    "test":"jest "
   },
   "browserslist": {
     "production": [

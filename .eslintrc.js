@@ -4,16 +4,29 @@ module.exports = {
         "es2021": true
     },
     "extends": [
-        "standard"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        // Prettier
+        "plugin:prettier/recommended",
+        "prettier",
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 12,
+        "ecmaFeatures": {
+          "jsx": true
+        },
+        "ecmaVersion": 2020,
         "sourceType": "module"
-    },
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "rules": {
+      },
+    "overrides": [
+        {
+          "files": ["*.js"],
+          "rules": {
+            "@typescript-eslint/explicit-module-boundary-types": "off"
+          }
+        }
+      ],
+    "rules":{
+        '@typescript-eslint/no-var-requires': 0,
     }
 };
