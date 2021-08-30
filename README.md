@@ -33,6 +33,4 @@ View the [lerna docs](https://lerna.js.org/) to see other commands
 
 This template is maintained by [Renli](https://github/renli-tech)
 
-Licence [MIT](./LICENCE)
-
-> > > > > > > 89ba68ec7892965d8aea849c5eaadb6fa8898ceb
+Licence [MIT](./LICENSE)
