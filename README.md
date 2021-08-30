@@ -8,6 +8,11 @@ A template for monorepo projects
 
 The monorepo structure is managed with [Lerna](https://lerna.js.org/)
 
+### 🧩 Branches
+
+- [Master](./) - with default configuration
+- [With Rollup](https://github.com/renli-tech/monorepo/tree/with-rollup) - with [Rollup](https://rollupjs.org/guide/en/) configuration for bundling files
+
 #### 😋 Features
 
 - [Eslint](https://eslint.org/) - For linting code
