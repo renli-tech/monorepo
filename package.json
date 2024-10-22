@@ -31,11 +31,11 @@
     "test": "lerna run --stream test"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
-    "@babel/eslint-parser": "7.16.3",
-    "@babel/node": "7.16.0",
-    "@babel/preset-env": "7.16.0",
-    "@babel/runtime": "7.16.3",
+    "@babel/core": "7.25.9",
+    "@babel/eslint-parser": "7.25.9",
+    "@babel/node": "7.25.9",
+    "@babel/preset-env": "7.25.9",
+    "@babel/runtime": "7.25.9",
     "@commitlint/cli": "13.2.1",
     "@commitlint/config-conventional": "13.2.0",
     "@commitlint/config-lerna-scopes": "13.2.0",
